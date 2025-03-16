@@ -1,0 +1,80 @@
+/* Reset and General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.score-separator {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background: #ff5733;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #c70039;
+    transform: scale(1.05);
+}
+
+.reset-btn {
+    background: #f4c724;
+    color: black;
+}
+
+.reset-btn:hover {
+    background: #f4a224;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.winner {
+    color: #28a745;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
