@@ -5,25 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Linked new CSS file -->
 </head>
 <body>
-    <H1>Score Keeper</H1>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-    <select name="MaxScore" id="winningScore">
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-    </select>
-    <button id="p1Button">+1 for Player1</button>
-    <button id="p2Button">+1 for Player2</button>
-    <button id="resetButton">Reset</button>
-
-
-
+    <div class="container">
+        <h1>🏆 Score Keeper 🏆</h1>
+        <h1>
+            <span id="p1Display" class="score">0</span> 
+            <span class="score-separator">to</span> 
+            <span id="p2Display" class="score">0</span>
+        </h1>
+        <select name="MaxScore" id="winningScore">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <div class="button-group">
+            <button id="p1Button">+1 Player 1</button>
+            <button id="p2Button">+1 Player 2</button>
+            <button id="resetButton" class="reset-btn">🔄 Reset</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
